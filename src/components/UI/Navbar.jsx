@@ -15,7 +15,7 @@ export default function Navbar() {
           Main Menu
         </h2>
         {/* Logo Here */}
-        <div className='font-heading'>
+        <div className='font-heading text-primary-two'>
           <span className='flex items-center font-normal lg:text-[2.5rem] gap-2 text-xl'>
             <Logo className='w-7 aspect-square lg:w-auto' />
             Interno

@@ -12,10 +12,14 @@ module.exports = {
       'primary-one': 'hsl(31, 47%, 63%)',
       'primary-two': 'hsl(212, 14%, 19%)',
       'primary-three': 'hsl(30, 27%, 94%)',
+      'text-primary': 'hsl(210, 4%, 31%)',
     },
     extend: {
       maxWidth: {
         1200: '1200px',
+      },
+      fontSize: {
+        '22px': '1.375rem',
       },
     },
   },
