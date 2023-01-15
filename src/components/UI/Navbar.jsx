@@ -6,10 +6,10 @@ export default function Navbar() {
   const [navbarCollapsed, setNavbarCollapsed] = useState(true)
   const [searchHidden, setSearchHidden] = useState(true)
   return (
-    <div className='p-5 bg-white'>
+    <div className='bg-white'>
       <nav
         aria-labelledby='mainmenulabel'
-        className='lg:justify-evenly flex flex-wrap items-center justify-between'
+        className='flex flex-wrap items-center justify-between max-w-[1200px] mx-auto p-3'
       >
         <h2 className='hidden' id='mainmenu'>
           Main Menu
@@ -30,11 +30,11 @@ export default function Navbar() {
         />
         {/* Navbar Nav */}
         <div
-          className={`md:scale-100 w-full md:w-auto ${
-            navbarCollapsed ? 'scale-0' : 'scale-100'
-          } transition-transform duration-500 ease-in`}
+          className={`md:block w-full md:w-auto ${
+            navbarCollapsed ? 'hidden' : 'block'
+          } transition-all duration-500 ease-in`}
         >
-          <ul className='lg:gap-3 lg:flex-row font-jost lg:text-xl md:shadow-none flex flex-col p-2 text-sm shadow'>
+          <ul className='lg:gap-3 lg:flex-row font-jost lg:text-xl md:shadow-none lg:items-center flex flex-col p-2 text-sm shadow'>
             <li className='hover:scale-105' aria-current='page'>
               Home
             </li>
@@ -65,8 +65,8 @@ export default function Navbar() {
                   id='search'
                   autoComplete='off'
                   className={`${
-                    searchHidden ? 'scale-0' : 'scale-100'
-                  } shadow rounded transition-transform duration-500 ease-in-out`}
+                    searchHidden ? 'hidden' : 'block'
+                  } shadow rounded transition-all duration-500 ease-in-out`}
                 />
               </label>
             </li>
