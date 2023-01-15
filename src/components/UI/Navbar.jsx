@@ -9,7 +9,7 @@ export default function Navbar() {
     <div className='bg-white'>
       <nav
         aria-labelledby='mainmenulabel'
-        className='flex flex-wrap items-center justify-between max-w-[1200px] mx-auto p-3'
+        className='max-w-1200 flex flex-wrap items-center justify-between p-5 mx-auto'
       >
         <h2 className='hidden' id='mainmenu'>
           Main Menu

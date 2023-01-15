@@ -13,7 +13,11 @@ module.exports = {
       'primary-two': 'hsl(212, 14%, 19%)',
       'primary-three': 'hsl(30, 27%, 94%)',
     },
-    extend: {},
+    extend: {
+      maxWidth: {
+        1200: '1200px',
+      },
+    },
   },
   plugins: [],
 }
