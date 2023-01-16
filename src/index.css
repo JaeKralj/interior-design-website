@@ -9,3 +9,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: auto;
+  margin-bottom: 11px;
+}

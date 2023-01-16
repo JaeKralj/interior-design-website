@@ -6,7 +6,7 @@ export default function Navbar() {
   const [navbarCollapsed, setNavbarCollapsed] = useState(true)
   const [searchHidden, setSearchHidden] = useState(true)
   return (
-    <div className='bg-white'>
+    <header role='banner' className='bg-white'>
       <nav
         aria-labelledby='mainmenulabel'
         className='max-w-1200 flex flex-wrap items-center justify-between p-5 mx-auto'
@@ -73,6 +73,6 @@ export default function Navbar() {
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
   )
 }

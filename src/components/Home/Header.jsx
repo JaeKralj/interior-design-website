@@ -2,7 +2,10 @@ import { FaArrowRight } from 'react-icons/fa'
 import Button from '../UI/Button'
 export default function Header() {
   return (
-    <header className='bg-[url(/hero.jpg)] lg:rounded-bl-[18.1875rem] rounded-bl-[6.25rem] bg-white bg-no-repeat bg-center bg-cover min-h-screen'>
+    <section
+      id='hero'
+      className='bg-[url(/hero.jpg)] lg:rounded-bl-[18.1875rem] rounded-bl-[6.25rem] bg-white bg-no-repeat bg-center bg-cover min-h-screen'
+    >
       <div className='max-w-1200 flex items-center min-h-screen p-5 mx-auto'>
         <div>
           <h2 className='font-heading lg:text-[5.3125rem] text-[2.5rem] text-primary-two'>
@@ -17,6 +20,6 @@ export default function Header() {
           </Button>
         </div>
       </div>
-    </header>
+    </section>
   )
 }
