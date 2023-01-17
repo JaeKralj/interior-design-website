@@ -1,0 +1,12 @@
+.project-wrapper:nth-child(4n + 1) > div {
+  border-radius: 0 20% 0 0;
+}
+.project-wrapper:nth-child(2n + 1):not(:nth-child(4n + 1)) > div {
+  border-radius: 0 0 20% 0;
+}
+.project-wrapper:nth-child(2n):not(:nth-child(4n)) > div {
+  border-radius: 20% 0 0 0;
+}
+.project-wrapper:nth-child(4n) > div {
+  border-radius: 0 0 0 20%;
+}

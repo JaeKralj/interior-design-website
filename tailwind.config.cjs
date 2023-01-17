@@ -13,6 +13,7 @@ module.exports = {
       'primary-two': 'hsl(212, 14%, 19%)',
       'primary-three': 'hsl(30, 27%, 94%)',
       'text-primary': 'hsl(210, 4%, 31%)',
+      transparent: 'transparent',
     },
     extend: {
       maxWidth: {
@@ -20,6 +21,9 @@ module.exports = {
       },
       fontSize: {
         '22px': '1.375rem',
+      },
+      borderRadius: {
+        inherit: 'inherit',
       },
     },
   },
