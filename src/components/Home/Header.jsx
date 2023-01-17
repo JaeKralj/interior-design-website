@@ -7,7 +7,7 @@ export default function Header() {
       className='bg-[url(/hero.jpg)] lg:rounded-bl-[18.1875rem] rounded-bl-[6.25rem] bg-white bg-no-repeat bg-center bg-cover min-h-screen'
     >
       <div className='max-w-1200 flex items-center min-h-screen p-5 mx-auto'>
-        <div>
+        <div className='bg-blend-overlay bg-opacity-[.1] rounded p-3 bg-black'>
           <h2 className='font-heading lg:text-[5.3125rem] text-[2.5rem] text-primary-two'>
             Let Your Home <br /> Be Unique
           </h2>

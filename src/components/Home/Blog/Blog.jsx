@@ -5,7 +5,7 @@ import BlogCard from './BlogCard'
 export default function Blog() {
   return (
     <section id='blog' className='bg-white'>
-      <div className='max-w-1200 mx-auto'>
+      <div className='max-w-1200 p-5 mx-auto'>
         <h4 className='text-center lg:text-[3.125rem] text-2xl my-3'>
           Articles & News
         </h4>
@@ -15,7 +15,7 @@ export default function Blog() {
           of using.
         </p>
 
-        <div className='flex flex-wrap justify-between my-7'>
+        <div className='my-7 md:gap-1 flex flex-wrap justify-between gap-5'>
           <BlogCard
             imgUrl={interiorDesign}
             title='Let’s Get Solution For Building Construction Work'

@@ -1,5 +1,6 @@
 import AboutUs from '../components/Home/AboutUs'
 import Blog from '../components/Home/Blog/Blog'
+import Contact from '../components/Home/Contact'
 import Counter from '../components/Home/Counter'
 import Header from '../components/Home/Header'
 import Projects from '../components/Home/Projects/Projects'
@@ -16,6 +17,7 @@ export default function Home() {
       <Projects />
       <Counter />
       <Blog />
+      <Contact />
     </>
   )
 }
