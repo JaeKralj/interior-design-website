@@ -16,7 +16,7 @@ export default function Navbar() {
         </h2>
         {/* Logo Here */}
         <div className='font-heading text-primary-two'>
-          <span className='flex items-center font-normal lg:text-[2.5rem] gap-2 text-xl'>
+          <span className='flex items-center font-normal font-heading lg:text-[2.5rem] gap-2 text-xl'>
             <Logo className='w-7 aspect-square lg:w-auto' />
             Interno
           </span>
@@ -32,9 +32,9 @@ export default function Navbar() {
         <div
           className={`md:block w-full md:w-auto ${
             navbarCollapsed ? 'hidden' : 'block'
-          } transition-all duration-500 ease-in`}
+          } transition-all duration-750 ease-in mt-1`}
         >
-          <ul className='lg:gap-3 lg:flex-row font-jost lg:text-xl md:shadow-none lg:items-center flex flex-col p-2 text-sm shadow'>
+          <ul className='lg:flex-row font-jost lg:text-xl md:shadow-none lg:items-center flex flex-col gap-3 p-2 text-sm shadow'>
             <li className='hover:scale-105' aria-current='page'>
               Home
             </li>

@@ -1,4 +1,6 @@
 import AboutUs from '../components/Home/AboutUs'
+import Blog from '../components/Home/Blog/Blog'
+import Counter from '../components/Home/Counter'
 import Header from '../components/Home/Header'
 import Projects from '../components/Home/Projects/Projects'
 import Testimonial from '../components/Home/Testimonial'
@@ -12,6 +14,8 @@ export default function Home() {
       <AboutUs />
       <Testimonial />
       <Projects />
+      <Counter />
+      <Blog />
     </>
   )
 }

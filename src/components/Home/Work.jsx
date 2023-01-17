@@ -4,7 +4,7 @@ import Button from '../UI/Button'
 export default function Work() {
   return (
     <section id='work' className='bg-white'>
-      <div className='max-w-1200 lg:flex-row flex flex-col items-center justify-center p-5 mx-auto my-24'>
+      <div className='max-w-1200 lg:flex-row flex flex-col items-center justify-center p-5 mx-auto my-10'>
         <div className='text-center'>
           <h3 className='font-heading lg:text-2xl text-primary-two text-xl'>
             Project Plan

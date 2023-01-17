@@ -17,3 +17,21 @@
   bottom: auto;
   margin-bottom: 11px;
 }
+
+p,
+span,
+a,
+li {
+  font-family: 'Jost', sans-serif;
+  color: hsl(210, 4%, 31%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(212, 14%, 19%);
+  font-family: 'DM Serif Display', serif;
+}

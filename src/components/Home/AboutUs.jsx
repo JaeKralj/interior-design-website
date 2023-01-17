@@ -9,7 +9,7 @@ export default function AboutUs() {
     <section id='aboutus' className='bg-white'>
       <div className='max-w-1200 md:flex-row flex flex-col gap-5 p-4 mx-auto'>
         <div className='font-jost text-text-primary max-w-prose justify-evenly flex flex-col items-start'>
-          <h3 className='font-heading text-primary-two lg:text-5xl p-4 text-2xl'>
+          <h3 className='font-heading text-primary-two lg:text-5xl md:text-left px-4 text-2xl text-center'>
             We Create The Art Of Stylish Living Stylishly
           </h3>
           <p className='lg:text-[1.375rem] text-sm p-4'>
@@ -22,7 +22,7 @@ export default function AboutUs() {
               <span className='aspect-square w-14 bg-primary-three inline-block p-3 text-center rounded-full'>
                 <PhoneIcon />
               </span>
-              <div className='flex flex-col'>
+              <div className='flex flex-col mx-2 items-center justify-center'>
                 <span className='lg:text-2xl text-base font-bold'>
                   012345678
                 </span>

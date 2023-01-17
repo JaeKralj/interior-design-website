@@ -728,6 +728,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitejs/plugin-basic-ssl@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@vitejs/plugin-basic-ssl@npm:1.0.1"
+  peerDependencies:
+    vite: ^3.0.0 || ^4.0.0
+  checksum: 9060dd9b02b51f48f9e655d920214879157db5b8bea9681465ab199e1be4f207cc968393410f93935a0443f8c2b302cef2a3ac0a69087af68fb33a8795e1e203
+  languageName: node
+  linkType: hard
+
 "@vitejs/plugin-react@npm:^3.0.0":
   version: 3.0.1
   resolution: "@vitejs/plugin-react@npm:3.0.1"
@@ -1616,6 +1625,7 @@ __metadata:
   dependencies:
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.9
+    "@vitejs/plugin-basic-ssl": ^1.0.1
     "@vitejs/plugin-react": ^3.0.0
     autoprefixer: ^10.4.13
     postcss: ^8.4.21
