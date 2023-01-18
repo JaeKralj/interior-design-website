@@ -1,4 +1,4 @@
-import { ReactComponent as PhoneIcon } from 'assets/call.svg'
+import { ReactComponent as PhoneIcon } from 'assets/Call.svg'
 import { motion, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
