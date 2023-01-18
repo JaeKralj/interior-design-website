@@ -11,13 +11,15 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Work />
-      <AboutUs />
-      <Testimonial />
-      <Projects />
-      <Counter />
-      <Blog />
-      <Contact />
+      <main>
+        <Work />
+        <AboutUs />
+        <Testimonial />
+        <Projects />
+        <Counter />
+        <Blog />
+        <Contact />
+      </main>
     </>
   )
 }

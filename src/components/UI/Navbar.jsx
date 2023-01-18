@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaBars, FaSearch, FaTimes } from 'react-icons/fa'
-import { ReactComponent as Logo } from '../../assets/Logo.svg'
+import Logo from './Logo'
 
 export default function Navbar() {
   const [navbarCollapsed, setNavbarCollapsed] = useState(true)
@@ -16,10 +16,7 @@ export default function Navbar() {
         </h2>
         {/* Logo Here */}
         <div className='font-heading text-primary-two'>
-          <span className='flex items-center font-normal font-heading lg:text-[2.5rem] gap-2 text-xl'>
-            <Logo className='w-7 aspect-square lg:w-auto' />
-            Interno
-          </span>
+          <Logo />
         </div>
         {/* Toggler */}
         <FaBars
@@ -35,14 +32,17 @@ export default function Navbar() {
           } transition-all duration-750 ease-in mt-1`}
         >
           <ul className='lg:flex-row font-jost lg:text-xl md:shadow-none lg:items-center flex flex-col gap-3 p-2 text-sm shadow'>
-            <li className='hover:scale-105' aria-current='page'>
+            <li
+              className='hover:scale-105 hover:cursor-pointer'
+              aria-current='page'
+            >
               Home
             </li>
-            <li className='hover:scale-105'>Pages</li>
-            <li className='hover:scale-105'>Services</li>
-            <li className='hover:scale-105'>Project</li>
-            <li className='hover:scale-105'>Blog</li>
-            <li className='hover:scale-105'>Contact</li>
+            <li className='hover:scale-105 hover:cursor-pointer'>Pages</li>
+            <li className='hover:scale-105 hover:cursor-pointer'>Services</li>
+            <li className='hover:scale-105 hover:cursor-pointer'>Project</li>
+            <li className='hover:scale-105 hover:cursor-pointer'>Blog</li>
+            <li className='hover:scale-105 hover:cursor-pointer'>Contact</li>
             <li>
               <label htmlFor='search' className='flex items-center gap-2'>
                 {searchHidden ? (
@@ -50,12 +50,14 @@ export default function Navbar() {
                     onClick={() => {
                       setSearchHidden(prev => !prev)
                     }}
+                    className='cursor-zoom-in'
                   />
                 ) : (
                   <FaTimes
                     onClick={() => {
                       setSearchHidden(prev => !prev)
                     }}
+                    className='cursor-zoom-out'
                   />
                 )}
 

@@ -2,9 +2,34 @@ import interiorDesign from 'assets/interior_design.png'
 import kitchenDesign from 'assets/kitchen_design.png'
 import modernDesign from 'assets/modern_design.png'
 import BlogCard from './BlogCard'
+
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
+import { animateOnScrollVariant } from '../../../App'
+
 export default function Blog() {
+  // animation control from framer motion
+  const control = useAnimation()
+  // in view from intersection observer
+  const [ref, inView] = useInView()
+
+  // handle animation
+  useEffect(() => {
+    if (inView) {
+      control.start('visible')
+    }
+  }, [control, inView])
+
   return (
-    <section id='blog' className='bg-white'>
+    <motion.section
+      id='blog'
+      ref={ref}
+      variants={animateOnScrollVariant}
+      animate={control}
+      initial='hidden'
+      className='transition-transform duration-500 ease-in bg-white'
+    >
       <div className='max-w-1200 p-5 mx-auto'>
         <h4 className='text-center lg:text-[3.125rem] text-2xl my-3'>
           Articles & News
@@ -38,6 +63,6 @@ Solution'
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

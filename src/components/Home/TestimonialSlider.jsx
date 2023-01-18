@@ -1,4 +1,4 @@
-import { Autoplay, Pagination } from 'swiper'
+import { A11y, Autoplay, Keyboard, Pagination } from 'swiper'
 import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -12,9 +12,22 @@ export default function TestimonialSlider() {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      autoplay={{ delay: 3000 }}
+      autoplay={{ delay: 3000, pauseOnMouseEnter: true }}
       pagination={{ clickable: true }}
-      modules={[Pagination, Autoplay]}
+      keyboard={{
+        enabled: true,
+      }}
+      a11y={{
+        enabled: true,
+        containerMessage: 'wraps slides of reviews from clients',
+        containerRoleDescriptionMessage: 'container for reviews from clients',
+        itemRoleDescriptionMessage: 'This is a review from our client',
+      }}
+      onKeyPress={(swiper, key) => {
+        if (key !== 75) return
+        swiper.autoplay.pause()
+      }}
+      modules={[Pagination, Autoplay, Keyboard, A11y]}
       style={{
         height: 'fit-content',
         paddingBottom: '35px',

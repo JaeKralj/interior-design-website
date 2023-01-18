@@ -2,11 +2,34 @@ import modernRoom from 'assets/modern_room.png'
 import modernSittingRoom from 'assets/modern_sitting_room.png'
 import modernTable from 'assets/modern_table.png'
 import tableInKitchen from 'assets/table_in_kitchen.png'
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
+import { animateOnScrollVariant } from '../../../App'
 import ProjectCard from './ProjectCard'
 
 export default function Projects() {
+  // animation control from framer motion
+  const control = useAnimation()
+  // in view from intersection observer
+  const [ref, inView] = useInView()
+
+  // handle animation
+  useEffect(() => {
+    if (inView) {
+      control.start('visible')
+    }
+  }, [control, inView])
+
   return (
-    <section id='projects' className='bg-white'>
+    <motion.section
+      id='projects'
+      ref={ref}
+      variants={animateOnScrollVariant}
+      animate={control}
+      initial='hidden'
+      className='transition-transform duration-500 ease-in bg-white'
+    >
       <div className='max-w-1200 p-5 mx-auto'>
         <h4 className='font-heading text-primary-two text-center text-2xl lg:text-[3.125rem]'>
           Follow Our Projects
@@ -38,6 +61,6 @@ export default function Projects() {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
