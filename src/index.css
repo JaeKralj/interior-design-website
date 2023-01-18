@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: auto;
+  margin-bottom: 11px;
+}
+
+p,
+span,
+a,
+li {
+  font-family: 'Jost', sans-serif;
+  color: hsl(210, 4%, 31%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(212, 14%, 19%);
+  font-family: 'DM Serif Display', serif;
+}
