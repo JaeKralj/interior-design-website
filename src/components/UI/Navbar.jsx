@@ -27,7 +27,7 @@ export default function Navbar() {
         />
         {/* Navbar Nav */}
         <div
-          className={`md:block md:opacity-100 w-full md:w-auto ${
+          className={`md:max-h-max w-full md:w-auto ${
             navbarCollapsed ? 'max-h-0' : 'max-h-[300px]'
           } transition-[max-height] overflow-hidden duration-700 ease-in mt-1`}
         >
