@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import Logo from './Logo'
+import Logo from '../Logo'
+import FooterNavLink from './FooterNavLink'
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className='max-w-1200 flex flex-wrap justify-between gap-4 p-5 mx-auto'>
         <div className='max-w-[18.75rem] mx-auto md:mx-0 flex flex-col items-center gap-4 md:items-start'>
           <Logo />
-          <p className='md:text-left text-center lg:text-[1.375rem] text-sm'>
+          <p className='md:text-left text-center lg:text-[18px] text-sm'>
             It is a long established fact that a reader will be distracted
             lookings.
           </p>
@@ -21,21 +22,21 @@ export default function Footer() {
         <div>
           <h4 className='lg:text-2xl text-base'>Pages</h4>
           <ul>
-            <li className='lg:text-[1.375rem] text-sm my-4'>About Us</li>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Our Projects</li>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Our Team</li>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Contact Us</li>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Services</li>
+            <FooterNavLink>About Us</FooterNavLink>
+            <FooterNavLink>Our Projects</FooterNavLink>
+            <FooterNavLink>Our Team</FooterNavLink>
+            <FooterNavLink>Contact Us</FooterNavLink>{' '}
+            <FooterNavLink>Services</FooterNavLink>
           </ul>
         </div>
         <div>
           <h4 className='lg:text-2xl text-base'>Services</h4>
           <ul>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Kitchan</li>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Living Area</li>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Bathroom</li>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Dining Hall</li>
-            <li className='lg:text-[1.375rem] text-sm my-4'>Bedroom</li>
+            <FooterNavLink>Kitchan</FooterNavLink>
+            <FooterNavLink>Living Area</FooterNavLink>
+            <FooterNavLink>Bathroom</FooterNavLink>
+            <FooterNavLink>Dining Hall</FooterNavLink>
+            <FooterNavLink>Bedroom</FooterNavLink>
           </ul>
         </div>
         <div className='max-w-[15rem] mx-auto md:mx-0'>

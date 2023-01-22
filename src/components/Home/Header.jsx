@@ -5,9 +5,9 @@ export default function Header() {
   return (
     <section
       id='hero'
-      className='bg-[url(/hero.jpg)] lg:rounded-bl-[18.1875rem] rounded-bl-[6.25rem] bg-white bg-no-repeat bg-center bg-cover min-h-screen transition-transform ease-in duration-[0.8s]'
+      className='bg-[url(/hero.jpg)] lg:rounded-bl-[18.1875rem] rounded-bl-[6.25rem] bg-white bg-no-repeat bg-center bg-cover md:min-h-[50rem] min-h-[500px] transition-transform ease-in duration-[0.8s]'
     >
-      <div className='max-w-1200 flex items-center min-h-screen p-5 mx-auto'>
+      <div className='max-w-1200 flex items-center min-h-[inherit] p-5 mx-auto'>
         <div className='bg-blend-overlay bg-opacity-[.1] rounded p-3 bg-black'>
           <h1 className='font-heading lg:text-[5.3125rem] text-[2.5rem] text-primary-two'>
             Let Your Home <br /> Be Unique
