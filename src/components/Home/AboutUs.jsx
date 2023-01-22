@@ -54,7 +54,7 @@ export default function AboutUs() {
                 </div>
               </div>
             </a>
-            <Button className='bg-primary-two gap-1 px-8 py-6 max-w-[14.875rem]'>
+            <Button className='bg-primary-two gap-1 px-8 py-5 max-w-[14.875rem]'>
               Get Free Estimate <FaArrowRight className='fill-primary-one' />
             </Button>
           </div>

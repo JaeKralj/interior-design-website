@@ -27,11 +27,11 @@ export default function Work() {
       animate={control}
       initial='hidden'
     >
-      <div className='max-w-1200 lg:flex-row flex flex-col items-center justify-center p-5 mx-auto my-10'>
+      <div className='max-w-1200 lg:flex-row flex flex-col items-center justify-center gap-4 p-5 mx-auto my-10'>
         <div className='text-center'>
-          <h3 className='font-heading lg:text-2xl text-primary-two text-xl'>
+          <h2 className='font-heading lg:text-2xl text-primary-two text-xl'>
             Project Plan
-          </h3>
+          </h2>
           <p className='font-jost lg:text-[1.375rem] text-sm px-3 text-text-primary'>
             There are many variations of the passages of lorem Ipsum from
             available, majority.
@@ -42,9 +42,9 @@ export default function Work() {
           </Button>
         </div>
         <div className='text-center'>
-          <h3 className='font-heading lg:text-2xl text-primary-two text-xl'>
+          <h2 className='font-heading lg:text-2xl text-primary-two text-xl'>
             Interior Work
-          </h3>
+          </h2>
           <p className='font-jost lg:text-[1.375rem] text-sm px-3 text-text-primary'>
             There are many variations of the passages of lorem Ipsum from
             available, majority.
@@ -55,9 +55,9 @@ export default function Work() {
           </Button>
         </div>
         <div className='text-center'>
-          <h3 className='font-heading lg:text-2xl text-primary-two text-xl'>
+          <h2 className='font-heading lg:text-2xl text-primary-two text-xl'>
             Realization
-          </h3>
+          </h2>
           <p className='font-jost lg:text-[1.375rem] text-sm px-3 text-text-primary'>
             There are many variations of the passages of lorem Ipsum from
             available, majority.

@@ -27,11 +27,11 @@ export default function Navbar() {
         />
         {/* Navbar Nav */}
         <div
-          className={`md:block w-full md:w-auto ${
-            navbarCollapsed ? 'hidden' : 'block'
-          } transition-all duration-750 ease-in mt-1`}
+          className={`md:block md:opacity-100 w-full md:w-auto ${
+            navbarCollapsed ? 'max-h-0' : 'max-h-[300px]'
+          } transition-[max-height] overflow-hidden duration-700 ease-in mt-1`}
         >
-          <ul className='lg:flex-row font-jost lg:text-xl md:shadow-none lg:items-center flex flex-col gap-3 p-2 text-sm shadow'>
+          <ul className='md:flex-row font-jost md:text-xl md:shadow-none md:items-center flex flex-col gap-4 p-2 text-sm shadow'>
             <li
               className='hover:scale-105 hover:cursor-pointer'
               aria-current='page'
